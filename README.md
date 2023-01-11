@@ -4,5 +4,10 @@
 -React Native
 -React redux
 
-### Description
+## Description
 This is basic food delivery app made in react native which contains react-redux
+
+
+## Usage:
+`npm install`
+`npm start`
