@@ -237,7 +237,7 @@ const MainLayout = ({
       }}
     >
       {/* Header */}
-      {false && (
+      {layoutVisibility && (
         <Header
           containerStyle={{
             height: 50,
@@ -306,7 +306,7 @@ const MainLayout = ({
         />
       </View>
       {/* Footer */}
-      {false && (
+      {layoutVisibility && (
         <View style={{ height: 100, justifyContent: "flex-end" }}>
           {/* Shadow */}
           <LinearGradient

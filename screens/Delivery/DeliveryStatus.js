@@ -7,8 +7,10 @@ import Header from "../../components/Home/Header";
 import LineDivider from "../../components/ui/LineDivider";
 import TextButton from "../../components/ui/TextButton";
 import TextIconButton from "../../components/ui/TextIconButton";
+import { connect } from "react-redux";
+import { setLayoutVisibility } from "../../store/tab/tabActions";
 
-const DeliveryStatus = ({ navigation }) => {
+const DeliveryStatus = ({ navigation, setLayoutVisibility }) => {
   const [currentStep, setCurrentStep] = useState(0);
 
   useEffect(() => {
@@ -155,6 +157,7 @@ const DeliveryStatus = ({ navigation }) => {
               label="Cancel"
               labelStyle={{ color: COLORS.primary }}
               onPress={() => {
+                setLayoutVisibility(true)
                 navigation.navigate("Home");
               }}
             />
@@ -184,7 +187,10 @@ const DeliveryStatus = ({ navigation }) => {
           <TextButton
             buttonContainerStyle={{ height: 55, borderRadius: SIZES.base }}
             label="Done"
-            onPress={() => navigation.navigate("Home")}
+            onPress={() => {
+              setLayoutVisibility(true);
+              navigation.navigate("Home");
+            }}
           />
         )}
       </View>
@@ -213,4 +219,12 @@ const DeliveryStatus = ({ navigation }) => {
   );
 };
 
-export default DeliveryStatus;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setLayoutVisibility: (selectedTab) => {
+      return dispatch(setLayoutVisibility(selectedTab));
+    },
+  };
+};
+
+export default connect(null, mapDispatchToProps)(DeliveryStatus);

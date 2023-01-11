@@ -182,28 +182,28 @@ const allCards = [
 
 const fromLocs = [
   {
-    latitude: 1.5347282806345879,
-    longitude: 110.35632207358996,
+    latitude: 51.892162735486785,
+    longitude: 18.950916322932308,
   },
   {
-    latitude: 1.556306570595712,
-    longitude: 110.35504616746915,
+    latitude: 51.89109371096511,
+    longitude: 18.95300036789608,
   },
   {
-    latitude: 1.5238753474714375,
-    longitude: 110.34261833833622,
+    latitude: 51.891143822057174,
+    longitude: 18.95574300715161,
   },
   {
-    latitude: 1.5578068150528928,
-    longitude: 110.35482523764315,
+    latitude: 51.885708760387,
+    longitude: 18.955235315535027,
   },
   {
-    latitude: 1.558050496260768,
-    longitude: 110.34743759630511,
+    latitude: 51.87476516878254,
+    longitude: 18.957436981074153,
   },
   {
-    latitude: 1.5573478487252896,
-    longitude: 110.35568783282145,
+    latitude: 51.89368927797026,
+    longitude: 18.95970840060383,
   },
 ];
 
@@ -211,39 +211,39 @@ const coupons = [
   {
     id: 1,
     image: images.burger_king,
-    name: 'Burger King',
+    name: "Burger King",
     discount: 20,
-    valid_date: '01 Jan 2022'
+    valid_date: "01 Jan 2022",
   },
   {
     id: 2,
     image: images.kfc,
-    name: 'KFC',
+    name: "KFC",
     discount: 10,
-    valid_date: '01 Feb 2022'
+    valid_date: "01 Feb 2022",
   },
   {
     id: 3,
     image: images.mcdonald,
-    name: 'McDonald',
+    name: "McDonald",
     discount: 30,
-    valid_date: '01 Jan 2022'
+    valid_date: "01 Jan 2022",
   },
   {
     id: 4,
     image: images.pizza_hut,
-    name: 'Pizza hut',
+    name: "Pizza hut",
     discount: 50,
-    valid_date: '01 May 2022'
+    valid_date: "01 May 2022",
   },
   {
     id: 5,
     image: images.starbucks,
-    name: 'Starbucks',
+    name: "Starbucks",
     discount: 15,
-    valid_date: '01 Dec 2023'
+    valid_date: "01 Dec 2023",
   },
-]
+];
 
 export default {
   myProfile,
@@ -254,5 +254,5 @@ export default {
   myCards,
   allCards,
   fromLocs,
-  coupons
+  coupons,
 };
